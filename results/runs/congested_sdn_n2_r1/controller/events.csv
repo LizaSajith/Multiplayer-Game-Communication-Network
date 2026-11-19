@@ -1,0 +1,13 @@
+time,event,detail
+1795052110.485,start,mode=dynamic match=registered port=5005 link=10.0Mbps high=0.7 low=0.3
+1795052111.537,switch_up,dpid=1
+1795052111.584,switch_up,dpid=2
+1795052112.739,mode,off
+1795052112.741,mode,dynamic
+1795052114.451,register,10.0.0.3:53427
+1795052114.467,register,10.0.0.2:58115
+1795052124.554,priority_on,util=0.95 >= 0.70
+1795052153.175,unregister,10.0.0.2
+1795052153.184,unregister,10.0.0.3
+1795052157.265,switch_down,dpid=1
+1795052157.300,switch_down,dpid=2

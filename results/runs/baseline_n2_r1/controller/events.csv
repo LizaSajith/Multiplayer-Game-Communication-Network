@@ -1,0 +1,12 @@
+time,event,detail
+1795051963.420,start,mode=off match=registered port=5005 link=10.0Mbps high=0.7 low=0.3
+1795051965.174,switch_up,dpid=1
+1795051965.245,switch_up,dpid=2
+1795051966.507,mode,off
+1795051966.509,mode,off
+1795051968.335,register,10.0.0.2:51766
+1795051968.340,register,10.0.0.3:49737
+1795052006.822,unregister,10.0.0.2
+1795052006.827,unregister,10.0.0.3
+1795052007.613,switch_down,dpid=1
+1795052007.645,switch_down,dpid=2

@@ -1,0 +1,5 @@
+label,t_epoch,action,ip,port,ok,latency_ms,attempt,detail
+congested_static,1795052064.604,register,10.0.0.3,58078,1,8.47,1,"{""ok"": true, ""priority_on"": true}"
+congested_static,1795052064.620,register,10.0.0.2,58890,1,8.88,1,"{""ok"": true, ""priority_on"": true}"
+congested_static,1795052104.104,unregister,10.0.0.3,0,1,23.57,1,"{""ok"": true}"
+congested_static,1795052104.110,unregister,10.0.0.2,0,1,6.21,1,"{""ok"": true}"

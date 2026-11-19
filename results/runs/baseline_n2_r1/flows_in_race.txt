@@ -1,0 +1,12 @@
+### ovs-ofctl -O OpenFlow13 dump-flows s1   (read while the race was running)
+OFPST_FLOW reply (OF1.3) (xid=0x2):
+ cookie=0x0, duration=21.166s, table=0, n_packets=1816, n_bytes=172523, priority=0 actions=goto_table:1
+ cookie=0x0, duration=19.802s, table=1, n_packets=466, n_bytes=29299, priority=1,in_port=1,dl_src=00:00:00:00:00:03,dl_dst=00:00:00:00:00:02 actions=output:2
+ cookie=0x0, duration=19.786s, table=1, n_packets=466, n_bytes=29299, priority=1,in_port=1,dl_src=00:00:00:00:00:04,dl_dst=00:00:00:00:00:02 actions=output:2
+ cookie=0x0, duration=19.770s, table=1, n_packets=0, n_bytes=0, priority=1,in_port=1,dl_src=00:00:00:00:00:05,dl_dst=00:00:00:00:00:01 actions=output:3
+ cookie=0x0, duration=19.709s, table=1, n_packets=21, n_bytes=2255, priority=1,in_port=4,dl_src=72:78:cf:10:b8:cc,dl_dst=00:00:00:00:00:02 actions=output:2
+ cookie=0x0, duration=19.701s, table=1, n_packets=20, n_bytes=1942, priority=1,in_port=2,dl_src=00:00:00:00:00:02,dl_dst=72:78:cf:10:b8:cc actions=output:4
+ cookie=0x0, duration=18.027s, table=1, n_packets=372, n_bytes=42567, priority=1,in_port=2,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:03 actions=output:1
+ cookie=0x0, duration=18.021s, table=1, n_packets=372, n_bytes=42557, priority=1,in_port=2,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:04 actions=output:1
+ cookie=0x0, duration=21.166s, table=1, n_packets=99, n_bytes=24604, priority=0 actions=CONTROLLER:65535
+

@@ -1,0 +1,71 @@
+{
+  "case": "congested_static",
+  "players": 8,
+  "rep": 1,
+  "mode": "static",
+  "congestion": true,
+  "backend": "mininet",
+  "queue": 100,
+  "bw_mbps": 10,
+  "delay_ms": 0,
+  "laps": 1,
+  "iperf_mbps": 20,
+  "hosts": 8,
+  "match": "registered",
+  "ryu": "auto",
+  "t_start": 1795052494.6239464,
+  "finished": true,
+  "timed_out": false,
+  "t_bots_start": 1795052500.400039,
+  "t_iperf_start": 1795052508.4528685,
+  "commands": {
+    "server": "/usr/bin/python3 -m app.server --auto-start 8 --auto-start-delay 3 --exit-after-races 1 --laps 1 --time-limit 90.0 --label congested_static --stats-csv /home/nag/Documents/project17_final_v6/project17/results/runs/congested_static_n8_r1/server_stats.csv --results-csv /home/nag/Documents/project17_final_v6/project17/results/runs/congested_static_n8_r1/server_results.csv --event-log /home/nag/Documents/project17_final_v6/project17/results/runs/congested_static_n8_r1/server_events.csv --sdn-url http://10.0.0.254:8080 --sdn-log /home/nag/Documents/project17_final_v6/project17/results/runs/congested_static_n8_r1/sdn_calls.csv --quiet",
+    "bots": [
+      "/usr/bin/python3 -m app.bot --server 10.0.0.1:5005 --bots 1 --prefix h2- --name h2 --out /home/nag/Documents/project17_final_v6/project17/results/runs/congested_static_n8_r1 --label congested_static --duration 150.0 --linger 0 --quiet",
+      "/usr/bin/python3 -m app.bot --server 10.0.0.1:5005 --bots 1 --prefix h3- --name h3 --out /home/nag/Documents/project17_final_v6/project17/results/runs/congested_static_n8_r1 --label congested_static --duration 150.0 --linger 0 --quiet",
+      "/usr/bin/python3 -m app.bot --server 10.0.0.1:5005 --bots 1 --prefix h4- --name h4 --out /home/nag/Documents/project17_final_v6/project17/results/runs/congested_static_n8_r1 --label congested_static --duration 150.0 --linger 0 --quiet",
+      "/usr/bin/python3 -m app.bot --server 10.0.0.1:5005 --bots 1 --prefix h5- --name h5 --out /home/nag/Documents/project17_final_v6/project17/results/runs/congested_static_n8_r1 --label congested_static --duration 150.0 --linger 0 --quiet",
+      "/usr/bin/python3 -m app.bot --server 10.0.0.1:5005 --bots 1 --prefix h6- --name h6 --out /home/nag/Documents/project17_final_v6/project17/results/runs/congested_static_n8_r1 --label congested_static --duration 150.0 --linger 0 --quiet",
+      "/usr/bin/python3 -m app.bot --server 10.0.0.1:5005 --bots 1 --prefix h7- --name h7 --out /home/nag/Documents/project17_final_v6/project17/results/runs/congested_static_n8_r1 --label congested_static --duration 150.0 --linger 0 --quiet",
+      "/usr/bin/python3 -m app.bot --server 10.0.0.1:5005 --bots 1 --prefix h8- --name h8 --out /home/nag/Documents/project17_final_v6/project17/results/runs/congested_static_n8_r1 --label congested_static --duration 150.0 --linger 0 --quiet",
+      "/usr/bin/python3 -m app.bot --server 10.0.0.1:5005 --bots 1 --prefix h9- --name h9 --out /home/nag/Documents/project17_final_v6/project17/results/runs/congested_static_n8_r1 --label congested_static --duration 150.0 --linger 0 --quiet"
+    ],
+    "iperf": "iperf -c 10.0.0.102 -u -b 20M -t 90 -i 1"
+  },
+  "flows_in_race": {
+    "priority_flows": 16,
+    "game_flow_pkts": 6830,
+    "t_epoch": 1795052518.535
+  },
+  "server_exit_code": 0,
+  "t_server_end": 1795052543.4308677,
+  "verify": {
+    "priority_flows": 0,
+    "game_flow_pkts": 0,
+    "priority_flows_race": 16,
+    "game_flow_pkts_race": 6830,
+    "other_queue_pkts": 27354,
+    "game_queue_pkts": 7154,
+    "other_queue_dropped": 0,
+    "game_queue_dropped": 0,
+    "ok": true,
+    "reasons": []
+  },
+  "controller_status": {
+    "mode": "static",
+    "match": "registered",
+    "game_port": 5005,
+    "priority_on": true,
+    "link_mbps": 10.0,
+    "util": {
+      "s1-port1": 0.982,
+      "s2-port1": 0.013
+    },
+    "players": [],
+    "switches": [
+      1,
+      2
+    ]
+  },
+  "t_end": 1795052546.549516
+}

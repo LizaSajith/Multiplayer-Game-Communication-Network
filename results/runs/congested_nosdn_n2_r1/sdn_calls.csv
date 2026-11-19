@@ -1,0 +1,5 @@
+label,t_epoch,action,ip,port,ok,latency_ms,attempt,detail
+congested_nosdn,1795052014.324,register,10.0.0.2,35472,1,11.37,1,"{""ok"": true, ""priority_on"": false}"
+congested_nosdn,1795052014.333,register,10.0.0.3,49229,1,8.38,1,"{""ok"": true, ""priority_on"": false}"
+congested_nosdn,1795052056.541,unregister,10.0.0.3,0,1,9.22,1,"{""ok"": true}"
+congested_nosdn,1795052056.568,unregister,10.0.0.2,0,1,26.64,1,"{""ok"": true}"
