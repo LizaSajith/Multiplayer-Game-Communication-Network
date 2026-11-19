@@ -1,0 +1,61 @@
+------------------------------------------------------------
+Client connecting to 10.0.0.102, UDP port 5001
+Sending 1470 byte datagrams, IPG target: 0.00 us (kalman adjust)
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  1] local 10.0.0.101 port 34170 connected with 10.0.0.102 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.0000-1.0000 sec  2.46 MBytes  20.7 Mbits/sec
+[  1] 1.0000-2.0000 sec  2.17 MBytes  18.2 Mbits/sec
+[  1] 2.0000-3.0000 sec  2.55 MBytes  21.4 Mbits/sec
+[  1] 3.0000-4.0000 sec  2.78 MBytes  23.3 Mbits/sec
+[  1] 4.0000-5.0000 sec  1.11 MBytes  9.33 Mbits/sec
+[  1] 5.0000-6.0000 sec  1.98 MBytes  16.6 Mbits/sec
+[  1] 6.0000-7.0000 sec  2.39 MBytes  20.0 Mbits/sec
+[  1] 7.0000-8.0000 sec  1.58 MBytes  13.2 Mbits/sec
+[  1] 8.0000-9.0000 sec  2.32 MBytes  19.5 Mbits/sec
+[  1] 9.0000-10.0000 sec  2.36 MBytes  19.8 Mbits/sec
+[  1] 10.0000-11.0000 sec  2.68 MBytes  22.4 Mbits/sec
+[  1] 11.0000-12.0000 sec  2.52 MBytes  21.1 Mbits/sec
+[  1] 12.0000-13.0000 sec  2.71 MBytes  22.7 Mbits/sec
+[  1] 13.0000-14.0000 sec  2.22 MBytes  18.6 Mbits/sec
+[  1] 14.0000-15.0000 sec  2.75 MBytes  23.0 Mbits/sec
+[  1] 15.0000-16.0000 sec  2.53 MBytes  21.2 Mbits/sec
+[  1] 16.0000-17.0000 sec  1.81 MBytes  15.2 Mbits/sec
+[  1] 17.0000-18.0000 sec  3.15 MBytes  26.4 Mbits/sec
+[  1] 18.0000-19.0000 sec  2.44 MBytes  20.5 Mbits/sec
+[  1] 19.0000-20.0000 sec  2.46 MBytes  20.6 Mbits/sec
+[  1] 20.0000-21.0000 sec  2.30 MBytes  19.3 Mbits/sec
+[  1] 21.0000-22.0000 sec  2.81 MBytes  23.6 Mbits/sec
+[  1] 22.0000-23.0000 sec  2.49 MBytes  20.9 Mbits/sec
+[  1] 23.0000-24.0000 sec  2.30 MBytes  19.3 Mbits/sec
+[  1] 24.0000-25.0000 sec  2.68 MBytes  22.5 Mbits/sec
+[  1] 25.0000-26.0000 sec  2.36 MBytes  19.8 Mbits/sec
+[  1] 26.0000-27.0000 sec  2.35 MBytes  19.7 Mbits/sec
+[  1] 27.0000-28.0000 sec  2.59 MBytes  21.7 Mbits/sec
+[  1] 28.0000-29.0000 sec  2.47 MBytes  20.7 Mbits/sec
+[  1] 29.0000-30.0000 sec  2.79 MBytes  23.4 Mbits/sec
+[  1] 30.0000-31.0000 sec  2.32 MBytes  19.5 Mbits/sec
+[  1] 31.0000-32.0000 sec  2.68 MBytes  22.5 Mbits/sec
+[  1] 32.0000-33.0000 sec  2.50 MBytes  21.0 Mbits/sec
+[  1] 33.0000-34.0000 sec  2.27 MBytes  19.1 Mbits/sec
+[  1] 34.0000-35.0000 sec  2.43 MBytes  20.4 Mbits/sec
+[  1] 35.0000-36.0000 sec  2.48 MBytes  20.8 Mbits/sec
+[  1] 36.0000-37.0000 sec  2.82 MBytes  23.7 Mbits/sec
+[  1] 37.0000-38.0000 sec  2.48 MBytes  20.8 Mbits/sec
+[  1] 38.0000-39.0000 sec  2.34 MBytes  19.6 Mbits/sec
+[  1] 39.0000-40.0000 sec  2.45 MBytes  20.6 Mbits/sec
+[  1] 40.0000-41.0000 sec  2.10 MBytes  17.6 Mbits/sec
+[  1] 41.0000-42.0000 sec  3.05 MBytes  25.6 Mbits/sec
+[  1] 42.0000-43.0000 sec  2.58 MBytes  21.6 Mbits/sec
+[  1] 43.0000-44.0000 sec  2.46 MBytes  20.7 Mbits/sec
+[  1] 44.0000-45.0000 sec  1.40 MBytes  11.8 Mbits/sec
+[  1] 45.0000-46.0000 sec   980 KBytes  8.03 Mbits/sec
+[  1] 46.0000-47.0000 sec   955 KBytes  7.82 Mbits/sec
+[  1] 0.0000-47.7052 sec   111 MBytes  19.5 Mbits/sec
+[  1] Sent 79157 datagrams
+[  1] Read UDP fin failed: Connection refused
+[  1] Server Report:
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  1] 0.0000-44.6414 sec  48.3 MBytes  9.07 Mbits/sec   0.000 ms 42636/77085 (0%)
+[  1] 0.0000-44.6414 sec  16 datagrams received out-of-order

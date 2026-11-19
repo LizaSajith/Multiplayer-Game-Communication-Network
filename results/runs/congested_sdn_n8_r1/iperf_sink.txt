@@ -1,0 +1,53 @@
+------------------------------------------------------------
+Server listening on UDP port 5001
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  1] local 10.0.0.102 port 5001 connected with 10.0.0.101 port 50762
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  1] 0.0000-1.0000 sec  1.09 MBytes  9.11 Mbits/sec   0.847 ms 828/1603 (52%)
+[  1] 0.0000-1.0000 sec  6 datagrams received out-of-order
+[  1] 1.0000-2.0000 sec  1.09 MBytes  9.14 Mbits/sec   1.023 ms 1014/1791 (57%)
+[  1] 1.0000-2.0000 sec  1 datagrams received out-of-order
+[  1] 2.0000-3.0000 sec  1.09 MBytes  9.18 Mbits/sec   4.065 ms 668/1449 (46%)
+[  1] 3.0000-4.0000 sec  1.09 MBytes  9.15 Mbits/sec   1.889 ms 0/778 (0%)
+[  1] 4.0000-5.0000 sec  1.09 MBytes  9.17 Mbits/sec   3.277 ms 0/780 (0%)
+[  1] 5.0000-6.0000 sec  1.10 MBytes  9.22 Mbits/sec   4.415 ms 0/784 (0%)
+[  1] 6.0000-7.0000 sec  1.09 MBytes  9.17 Mbits/sec   1.720 ms 0/780 (0%)
+[  1] 7.0000-8.0000 sec  1.10 MBytes  9.27 Mbits/sec   2.281 ms 0/788 (0%)
+[  1] 8.0000-9.0000 sec  1.11 MBytes  9.29 Mbits/sec   3.087 ms 0/790 (0%)
+[  1] 9.0000-10.0000 sec  1.10 MBytes  9.21 Mbits/sec   1.173 ms 0/783 (0%)
+[  1] 10.0000-11.0000 sec  1.09 MBytes  9.13 Mbits/sec   1.767 ms 0/776 (0%)
+[  1] 11.0000-12.0000 sec  1.10 MBytes  9.27 Mbits/sec   2.294 ms 0/788 (0%)
+[  1] 12.0000-13.0000 sec  1.10 MBytes  9.27 Mbits/sec   3.383 ms 0/788 (0%)
+[  1] 13.0000-14.0000 sec  1.07 MBytes  9.01 Mbits/sec   4.161 ms 0/766 (0%)
+[  1] 14.0000-15.0000 sec  1.08 MBytes  9.09 Mbits/sec   1.766 ms 0/773 (0%)
+[  1] 15.0000-16.0000 sec  1.11 MBytes  9.29 Mbits/sec   2.203 ms 0/790 (0%)
+[  1] 16.0000-17.0000 sec  1.10 MBytes  9.23 Mbits/sec   3.796 ms 0/785 (0%)
+[  1] 17.0000-18.0000 sec  1.11 MBytes  9.29 Mbits/sec   1.479 ms 0/790 (0%)
+[  1] 18.0000-19.0000 sec  1.11 MBytes  9.28 Mbits/sec   1.665 ms 0/789 (0%)
+[  1] 19.0000-20.0000 sec  1.09 MBytes  9.13 Mbits/sec   2.804 ms 0/776 (0%)
+[  1] 20.0000-21.0000 sec  1.10 MBytes  9.22 Mbits/sec   1.501 ms 0/784 (0%)
+[  1] 20.0000-21.0000 sec  3 datagrams received out-of-order
+[  1] 21.0000-22.0000 sec  1.10 MBytes  9.26 Mbits/sec   1.619 ms 0/787 (0%)
+[  1] 22.0000-23.0000 sec  1.09 MBytes  9.10 Mbits/sec   1.067 ms 0/774 (0%)
+[  1] 23.0000-24.0000 sec  1.09 MBytes  9.18 Mbits/sec   4.643 ms 0/781 (0%)
+[  1] 24.0000-25.0000 sec  1.08 MBytes  9.02 Mbits/sec   2.455 ms 0/767 (0%)
+[  1] 25.0000-26.0000 sec  1.07 MBytes  8.98 Mbits/sec   1.601 ms 0/764 (0%)
+[  1] 26.0000-27.0000 sec  1.10 MBytes  9.21 Mbits/sec   2.290 ms 0/783 (0%)
+[  1] 27.0000-28.0000 sec  1.09 MBytes  9.17 Mbits/sec   5.072 ms 0/780 (0%)
+[  1] 27.0000-28.0000 sec  1 datagrams received out-of-order
+[  1] 28.0000-29.0000 sec  1.09 MBytes  9.18 Mbits/sec   1.680 ms 0/781 (0%)
+[  1] 28.0000-29.0000 sec  1 datagrams received out-of-order
+[  1] 29.0000-30.0000 sec  1.11 MBytes  9.30 Mbits/sec   1.877 ms 0/791 (0%)
+[  1] 29.0000-30.0000 sec  1 datagrams received out-of-order
+[  1] 30.0000-31.0000 sec  1.10 MBytes  9.20 Mbits/sec   2.565 ms 0/782 (0%)
+[  1] 31.0000-32.0000 sec  1.10 MBytes  9.27 Mbits/sec   3.467 ms 0/788 (0%)
+Waiting for server threads to complete. Interrupt again to force quit.
+[  1] 32.0000-32.8414 sec   873 KBytes  8.50 Mbits/sec   4.863 ms 0/608 (0%)
+[  1] 0.0000-32.8414 sec  35.9 MBytes  9.17 Mbits/sec   2.335 ms 2510/28117 (8.9%)
+[  1] 0.0000-32.8414 sec  13 datagrams received out-of-order
+[  5] WARNING: ack of last datagram failed.
+[  2] local 10.0.0.102 port 5001 connected with 10.0.0.101 port 50762
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  2] 0.0000-1.0000 sec   960 KBytes  7.87 Mbits/sec   1.194 ms 28127/28796 (98%)
+[  2] 1.0000-2.0000 sec   825 KBytes  6.76 Mbits/sec   3.397 ms 0/575 (0%)

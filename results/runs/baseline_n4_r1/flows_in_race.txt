@@ -1,0 +1,16 @@
+### ovs-ofctl -O OpenFlow13 dump-flows s1   (read while the race was running)
+OFPST_FLOW reply (OF1.3) (xid=0x2):
+ cookie=0x0, duration=21.190s, table=0, n_packets=3489, n_bytes=378266, priority=0 actions=goto_table:1
+ cookie=0x0, duration=19.838s, table=1, n_packets=460, n_bytes=28921, priority=1,in_port=1,dl_src=00:00:00:00:00:03,dl_dst=00:00:00:00:00:02 actions=output:2
+ cookie=0x0, duration=19.824s, table=1, n_packets=461, n_bytes=28992, priority=1,in_port=1,dl_src=00:00:00:00:00:04,dl_dst=00:00:00:00:00:02 actions=output:2
+ cookie=0x0, duration=19.810s, table=1, n_packets=463, n_bytes=29110, priority=1,in_port=1,dl_src=00:00:00:00:00:05,dl_dst=00:00:00:00:00:02 actions=output:2
+ cookie=0x0, duration=19.793s, table=1, n_packets=459, n_bytes=28861, priority=1,in_port=1,dl_src=00:00:00:00:00:06,dl_dst=00:00:00:00:00:02 actions=output:2
+ cookie=0x0, duration=19.775s, table=1, n_packets=0, n_bytes=0, priority=1,in_port=1,dl_src=00:00:00:00:00:07,dl_dst=00:00:00:00:00:01 actions=output:3
+ cookie=0x0, duration=19.720s, table=1, n_packets=30, n_bytes=3199, priority=1,in_port=4,dl_src=5e:cb:56:ec:0e:c8,dl_dst=00:00:00:00:00:02 actions=output:2
+ cookie=0x0, duration=19.710s, table=1, n_packets=35, n_bytes=3384, priority=1,in_port=2,dl_src=00:00:00:00:00:02,dl_dst=5e:cb:56:ec:0e:c8 actions=output:4
+ cookie=0x0, duration=18.030s, table=1, n_packets=371, n_bytes=57948, priority=1,in_port=2,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:03 actions=output:1
+ cookie=0x0, duration=18.012s, table=1, n_packets=370, n_bytes=57813, priority=1,in_port=2,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:06 actions=output:1
+ cookie=0x0, duration=17.929s, table=1, n_packets=369, n_bytes=57726, priority=1,in_port=2,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:05 actions=output:1
+ cookie=0x0, duration=17.928s, table=1, n_packets=367, n_bytes=57407, priority=1,in_port=2,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:04 actions=output:1
+ cookie=0x0, duration=21.188s, table=1, n_packets=104, n_bytes=24905, priority=0 actions=CONTROLLER:65535
+

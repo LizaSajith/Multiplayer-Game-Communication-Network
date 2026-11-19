@@ -1,0 +1,95 @@
+### ovs-ofctl -O OpenFlow13 dump-flows s1   (after the race: the players have left, so their priority rules are gone; flows_in_race.txt has them)
+OFPST_FLOW reply (OF1.3) (xid=0x2):
+ cookie=0x0, duration=45.475s, table=0, n_packets=30894, n_bytes=40448994, priority=0 actions=goto_table:1
+ cookie=0x0, duration=44.149s, table=1, n_packets=1226, n_bytes=77089, priority=1,in_port=1,dl_src=00:00:00:00:00:03,dl_dst=00:00:00:00:00:02 actions=output:2
+ cookie=0x0, duration=44.136s, table=1, n_packets=1225, n_bytes=77026, priority=1,in_port=1,dl_src=00:00:00:00:00:04,dl_dst=00:00:00:00:00:02 actions=output:2
+ cookie=0x0, duration=44.124s, table=1, n_packets=0, n_bytes=0, priority=1,in_port=1,dl_src=00:00:00:00:00:05,dl_dst=00:00:00:00:00:01 actions=output:3
+ cookie=0x0, duration=44.106s, table=1, n_packets=30, n_bytes=3155, priority=1,in_port=4,dl_src=b6:13:cd:66:2b:13,dl_dst=00:00:00:00:00:02 actions=output:2
+ cookie=0x0, duration=44.096s, table=1, n_packets=33, n_bytes=3226, priority=1,in_port=2,dl_src=00:00:00:00:00:02,dl_dst=b6:13:cd:66:2b:13 actions=output:4
+ cookie=0x0, duration=42.504s, table=1, n_packets=887, n_bytes=102329, priority=1,in_port=2,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:03 actions=output:1
+ cookie=0x0, duration=42.488s, table=1, n_packets=887, n_bytes=102329, priority=1,in_port=2,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:04 actions=output:1
+ cookie=0x0, duration=34.525s, table=1, n_packets=26491, n_bytes=40054392, priority=1,in_port=3,dl_src=00:00:00:00:00:01,dl_dst=00:00:00:00:00:05 actions=output:1
+ cookie=0x0, duration=45.475s, table=1, n_packets=115, n_bytes=29448, priority=0 actions=CONTROLLER:65535
+
+### tc -s class show dev s1-eth1
+class htb 1:1 parent 1:fffe leaf 11: prio 1 rate 1Mbit ceil 10Mbit burst 1564b cburst 1564b
+ Sent 40173235 bytes 28255 pkt (dropped 198, overlimits 24320 requeues 0) 
+ backlog 101304b 67p requeues 0
+ lended: 3321 borrowed: 24934 giants: 0
+ tokens: -146559 ctokens: -2440
+
+class htb 1:fffe root rate 10Mbit ceil 10Mbit burst 1500b cburst 1500b
+ Sent 40173235 bytes 28255 pkt (dropped 0, overlimits 23932 requeues 0) 
+ backlog 0b 0p requeues 0
+ lended: 24934 borrowed: 0 giants: 0
+ tokens: -3240 ctokens: -3240
+
+class htb 1:2 parent 1:fffe leaf 12: prio 0 rate 6Mbit ceil 10Mbit burst 1563b cburst 1564b
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+ lended: 0 borrowed: 0 giants: 0
+ tokens: 32583 ctokens: 19550
+
+
+### setup_qos.sh show
+_uuid               : 21439fab-0b20-4bcf-b8b0-dfd386c1dc11
+external_ids        : {}
+other_config        : {max-rate="10000000"}
+queues              : {0=2b44565b-7c9f-4a77-9f88-8b37f02ce194, 1=32884ccf-fac0-4185-84f2-a3bbe504472f}
+type                : linux-htb
+_uuid               : 32884ccf-fac0-4185-84f2-a3bbe504472f
+dscp                : []
+external_ids        : {}
+other_config        : {max-rate="10000000", min-rate="6000000", priority="0"}
+
+_uuid               : 2b44565b-7c9f-4a77-9f88-8b37f02ce194
+dscp                : []
+external_ids        : {}
+other_config        : {max-rate="10000000", min-rate="1000000", priority="1"}
+=== tc classes on s1-eth1 (watch 'Sent' grow on 1:2 for game traffic) ===
+class htb 1:1 parent 1:fffe leaf 11: prio 1 rate 1Mbit ceil 10Mbit burst 1564b cburst 1564b
+ Sent 40236739 bytes 28297 pkt (dropped 198, overlimits 24353 requeues 0) 
+ backlog 111888b 74p requeues 0
+ lended: 3326 borrowed: 24971 giants: 0
+ tokens: -121019 ctokens: -14791
+
+class htb 1:fffe root rate 10Mbit ceil 10Mbit burst 1500b cburst 1500b
+ Sent 40236739 bytes 28297 pkt (dropped 0, overlimits 23969 requeues 0) 
+ backlog 0b 0p requeues 0
+ lended: 24971 borrowed: 0 giants: 0
+ tokens: -15591 ctokens: -15591
+
+class htb 1:2 parent 1:fffe leaf 12: prio 0 rate 6Mbit ceil 10Mbit burst 1563b cburst 1564b
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+ lended: 0 borrowed: 0 giants: 0
+ tokens: 32583 ctokens: 19550
+
+--- queue sizes on s1-eth1 ---
+qdisc htb 1: root refcnt 3 r2q 10 default 0x1 direct_packets_stat 0 direct_qlen 1000
+qdisc pfifo 12: parent 1:2 limit 100p
+qdisc pfifo 11: parent 1:1 limit 100p
+=== tc classes on s2-eth1 (watch 'Sent' grow on 1:2 for game traffic) ===
+class htb 1:1 parent 1:fffe leaf 11: prio 1 rate 1Mbit ceil 10Mbit burst 1564b cburst 1564b
+ Sent 161871 bytes 2486 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+ lended: 2486 borrowed: 0 giants: 0
+ tokens: 173814 ctokens: 17439
+
+class htb 1:fffe root rate 10Mbit ceil 10Mbit burst 1500b cburst 1500b
+ Sent 161871 bytes 2486 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+ lended: 0 borrowed: 0 giants: 0
+ tokens: 16639 ctokens: 16639
+
+class htb 1:2 parent 1:fffe leaf 12: prio 0 rate 6Mbit ceil 10Mbit burst 1563b cburst 1564b
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+ lended: 0 borrowed: 0 giants: 0
+ tokens: 32583 ctokens: 19550
+
+--- queue sizes on s2-eth1 ---
+qdisc htb 1: root refcnt 3 r2q 10 default 0x1 direct_packets_stat 0 direct_qlen 1000
+qdisc pfifo 12: parent 1:2 limit 100p
+qdisc pfifo 11: parent 1:1 limit 100p
+

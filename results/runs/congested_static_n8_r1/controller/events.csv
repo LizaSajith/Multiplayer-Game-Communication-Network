@@ -1,0 +1,27 @@
+time,event,detail
+1795052495.056,start,mode=static match=registered port=5005 link=10.0Mbps high=0.7 low=0.3
+1795052497.187,switch_up,dpid=1
+1795052497.267,switch_up,dpid=2
+1795052498.689,mode,off
+1795052498.689,priority_off,mode=off
+1795052498.693,mode,static
+1795052498.693,priority_on,mode=static
+1795052498.693,warning,priority is on but no players are registered yet
+1795052500.694,register,10.0.0.4:51719
+1795052500.706,register,10.0.0.2:48000
+1795052500.709,register,10.0.0.6:32880
+1795052500.722,register,10.0.0.5:54301
+1795052500.725,register,10.0.0.3:50283
+1795052500.728,register,10.0.0.8:37505
+1795052500.784,register,10.0.0.7:43277
+1795052500.824,register,10.0.0.9:48015
+1795052543.160,unregister,10.0.0.3
+1795052543.164,unregister,10.0.0.8
+1795052543.173,unregister,10.0.0.6
+1795052543.189,unregister,10.0.0.7
+1795052543.192,unregister,10.0.0.9
+1795052543.201,unregister,10.0.0.5
+1795052543.205,unregister,10.0.0.2
+1795052543.210,unregister,10.0.0.4
+1795052547.543,switch_down,dpid=1
+1795052547.576,switch_down,dpid=2

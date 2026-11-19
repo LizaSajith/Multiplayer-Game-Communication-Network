@@ -1,0 +1,17 @@
+### ovs-ofctl -O OpenFlow13 dump-flows s1   (read while the race was running)
+OFPST_FLOW reply (OF1.3) (xid=0x2):
+ cookie=0x0, duration=21.025s, table=0, n_packets=19388, n_bytes=24364279, priority=0 actions=goto_table:1
+ cookie=0x0, duration=19.799s, table=1, n_packets=467, n_bytes=29365, priority=1,in_port=1,dl_src=00:00:00:00:00:03,dl_dst=00:00:00:00:00:02 actions=output:2
+ cookie=0x0, duration=19.783s, table=1, n_packets=468, n_bytes=29425, priority=1,in_port=1,dl_src=00:00:00:00:00:04,dl_dst=00:00:00:00:00:02 actions=output:2
+ cookie=0x0, duration=19.766s, table=1, n_packets=464, n_bytes=29173, priority=1,in_port=1,dl_src=00:00:00:00:00:05,dl_dst=00:00:00:00:00:02 actions=output:2
+ cookie=0x0, duration=19.749s, table=1, n_packets=466, n_bytes=29299, priority=1,in_port=1,dl_src=00:00:00:00:00:06,dl_dst=00:00:00:00:00:02 actions=output:2
+ cookie=0x0, duration=19.730s, table=1, n_packets=0, n_bytes=0, priority=1,in_port=1,dl_src=00:00:00:00:00:07,dl_dst=00:00:00:00:00:01 actions=output:3
+ cookie=0x0, duration=19.708s, table=1, n_packets=28, n_bytes=3067, priority=1,in_port=4,dl_src=42:ef:9e:dc:29:2f,dl_dst=00:00:00:00:00:02 actions=output:2
+ cookie=0x0, duration=19.702s, table=1, n_packets=37, n_bytes=3516, priority=1,in_port=2,dl_src=00:00:00:00:00:02,dl_dst=42:ef:9e:dc:29:2f actions=output:4
+ cookie=0x0, duration=18.004s, table=1, n_packets=373, n_bytes=58762, priority=1,in_port=2,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:04 actions=output:1
+ cookie=0x0, duration=17.977s, table=1, n_packets=372, n_bytes=58617, priority=1,in_port=2,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:06 actions=output:1
+ cookie=0x0, duration=17.976s, table=1, n_packets=371, n_bytes=58480, priority=1,in_port=2,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:03 actions=output:1
+ cookie=0x0, duration=17.952s, table=1, n_packets=371, n_bytes=58470, priority=1,in_port=2,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:05 actions=output:1
+ cookie=0x0, duration=10.100s, table=1, n_packets=15860, n_bytes=23980320, priority=1,in_port=3,dl_src=00:00:00:00:00:01,dl_dst=00:00:00:00:00:07 actions=output:1
+ cookie=0x0, duration=21.025s, table=1, n_packets=111, n_bytes=25785, priority=0 actions=CONTROLLER:65535
+
