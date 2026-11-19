@@ -1,7 +1,0 @@
-# Only the game window needs a package. The server, the bots and the tests need nothing but Python 3.9+.
-#
-# Official pygame has ready-made Windows packages for Python 3.8 to 3.13 only (checked on PyPI, October 2026);
-# on Python 3.14 and newer "pip install pygame" would try to compile it and fail. So for those versions the
-# drop-in replacement pygame-ce is installed instead; it is imported as "pygame" too, nothing else changes.
-pygame>=2.1; python_version < "3.14"
-pygame-ce>=2.5; python_version >= "3.14"

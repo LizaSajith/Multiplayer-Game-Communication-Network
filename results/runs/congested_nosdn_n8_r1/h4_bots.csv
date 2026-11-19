@@ -1,2 +1,0 @@
-label,bot,state,finished,place,progress_m,health,rtt_n,rtt_mean_ms,rtt_p50_ms,rtt_p95_ms,rtt_max_ms,jitter_ms,rx_expected,rx_lost,rx_loss_pct,rx_reordered,rx_duplicates,snapshots,snapshot_hz,events,bad_datagrams,rx_packets,rx_bytes,tx_packets,tx_bytes
-congested_nosdn,h4-1,left,1,8,564.5,80,37,82.741,94.469,121.366,225.622,19.876,1088,427,39.246,0,0,620,11.822,151,0,661,132113,1525,31849

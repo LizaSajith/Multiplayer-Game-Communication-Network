@@ -1,9 +1,0 @@
-label,t_epoch,action,ip,port,ok,latency_ms,attempt,detail
-congested_sdn,1795052330.060,register,10.0.0.2,43538,1,11.56,1,"{""ok"": true, ""priority_on"": false}"
-congested_sdn,1795052330.140,register,10.0.0.3,51382,1,1.90,1,"{""ok"": true, ""priority_on"": false}"
-congested_sdn,1795052330.142,register,10.0.0.4,51800,1,2.23,1,"{""ok"": true, ""priority_on"": false}"
-congested_sdn,1795052330.179,register,10.0.0.5,36939,1,29.06,1,"{""ok"": true, ""priority_on"": false}"
-congested_sdn,1795052369.395,unregister,10.0.0.2,0,1,11.91,1,"{""ok"": true}"
-congested_sdn,1795052369.412,unregister,10.0.0.5,0,1,17.25,1,"{""ok"": true}"
-congested_sdn,1795052369.415,unregister,10.0.0.4,0,1,2.69,1,"{""ok"": true}"
-congested_sdn,1795052369.424,unregister,10.0.0.3,0,1,8.55,1,"{""ok"": true}"

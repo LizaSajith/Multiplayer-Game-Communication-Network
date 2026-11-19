@@ -1,5 +1,0 @@
-label,t_epoch,action,ip,port,ok,latency_ms,attempt,detail
-baseline,1795051968.336,register,10.0.0.2,51766,1,5.32,1,"{""ok"": true, ""priority_on"": false}"
-baseline,1795051968.341,register,10.0.0.3,49737,1,4.54,1,"{""ok"": true, ""priority_on"": false}"
-baseline,1795052006.822,unregister,10.0.0.2,0,1,3.22,1,"{""ok"": true}"
-baseline,1795052006.828,unregister,10.0.0.3,0,1,2.78,1,"{""ok"": true}"

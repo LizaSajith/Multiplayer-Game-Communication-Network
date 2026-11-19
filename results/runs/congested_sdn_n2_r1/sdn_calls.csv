@@ -1,5 +1,0 @@
-label,t_epoch,action,ip,port,ok,latency_ms,attempt,detail
-congested_sdn,1795052114.452,register,10.0.0.3,53427,1,2.72,1,"{""ok"": true, ""priority_on"": false}"
-congested_sdn,1795052114.467,register,10.0.0.2,58115,1,2.48,1,"{""ok"": true, ""priority_on"": false}"
-congested_sdn,1795052153.177,unregister,10.0.0.2,0,1,12.77,1,"{""ok"": true}"
-congested_sdn,1795052153.184,unregister,10.0.0.3,0,1,6.88,1,"{""ok"": true}"

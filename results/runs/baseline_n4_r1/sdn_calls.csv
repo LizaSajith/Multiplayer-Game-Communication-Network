@@ -1,9 +1,0 @@
-label,t_epoch,action,ip,port,ok,latency_ms,attempt,detail
-baseline,1795052164.706,register,10.0.0.2,45018,1,8.91,1,"{""ok"": true, ""priority_on"": false}"
-baseline,1795052164.723,register,10.0.0.5,58167,1,2.56,1,"{""ok"": true, ""priority_on"": false}"
-baseline,1795052164.801,register,10.0.0.4,42030,1,5.31,1,"{""ok"": true, ""priority_on"": false}"
-baseline,1795052164.810,register,10.0.0.3,48587,1,6.01,1,"{""ok"": true, ""priority_on"": false}"
-baseline,1795052204.482,unregister,10.0.0.5,0,1,32.38,1,"{""ok"": true}"
-baseline,1795052204.492,unregister,10.0.0.2,0,1,9.33,1,"{""ok"": true}"
-baseline,1795052204.500,unregister,10.0.0.3,0,1,7.94,1,"{""ok"": true}"
-baseline,1795052204.511,unregister,10.0.0.4,0,1,11.29,1,"{""ok"": true}"
